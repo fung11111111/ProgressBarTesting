@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="ViewController" customModule="ProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="q1z-x6-4YJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXh-O9-PB6">
+                                <rect key="frame" x="95.5" y="424" width="223" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Test Progress Bar">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goTestPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2n-dk-tJ3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UXh-O9-PB6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1tf-eI-AcY"/>
+                            <constraint firstItem="q1z-x6-4YJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6SI-MD-zVb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q1z-x6-4YJ" secondAttribute="bottom" id="Aah-bz-bJ4"/>
+                            <constraint firstItem="q1z-x6-4YJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B3h-9M-BGI"/>
+                            <constraint firstItem="q1z-x6-4YJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S3V-tV-JGO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q1z-x6-4YJ" secondAttribute="trailing" id="VPp-7f-clS"/>
+                            <constraint firstItem="q1z-x6-4YJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XaH-Xa-nvG"/>
+                            <constraint firstItem="UXh-O9-PB6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="grH-73-Frw"/>
+                            <constraint firstAttribute="trailing" secondItem="q1z-x6-4YJ" secondAttribute="trailing" id="hBy-sq-cqC"/>
+                            <constraint firstAttribute="bottom" secondItem="q1z-x6-4YJ" secondAttribute="bottom" id="hfc-r1-2XQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="38"/>
+        </scene>
+        <!--Bar View Controller-->
+        <scene sceneID="Suh-Y3-NLc">
+            <objects>
+                <viewController storyboardIdentifier="progressbar" id="xgs-vJ-d8N" userLabel="Bar View Controller" customClass="ProgressBarViewController" customModule="ProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="he2-nd-MO9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-MC-FYK">
+                                <rect key="frame" x="0.0" y="-7" width="414" height="896.00000000000023"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MaR-MC-FYK" secondAttribute="trailing" id="FOu-JI-gdQ"/>
+                            <constraint firstAttribute="bottom" secondItem="MaR-MC-FYK" secondAttribute="bottom" id="Lrb-qP-OK9"/>
+                            <constraint firstItem="MaR-MC-FYK" firstAttribute="leading" secondItem="he2-nd-MO9" secondAttribute="leading" id="XVF-lQ-Fg1"/>
+                            <constraint firstItem="MaR-MC-FYK" firstAttribute="top" secondItem="he2-nd-MO9" secondAttribute="top" id="g7h-GU-WQj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ycE-sg-XCG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Toc-Ys-Qa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1120" height="982"/>
+    </resources>
+</document>
